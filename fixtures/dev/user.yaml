@@ -1,0 +1,13 @@
+parameters:
+    password: $2y$13$a2e.rTWqEa7cbOTajip.WePWvCfmkeherw93vZJBXvSJcWptkG7qe #testtilleuls
+
+App\Entity\User:
+    user_tilleuls_maxime:
+        email: maxime@les-tilleuls.coop
+        password: <{password}>
+        roles: [ 'ROLE_ADMIN' ]
+    
+    user_default:
+        email: default@mail.com
+        password: <{password}>
+        roles: [ 'ROLE_USER' ]
